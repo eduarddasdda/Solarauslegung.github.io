@@ -1,0 +1,305 @@
+<div class="demo-page">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:initial}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}.nice-form-group{--nf-input-size:1rem;--nf-input-font-size:calc(var(--nf-input-size)*0.875);--nf-small-font-size:calc(var(--nf-input-size)*0.875);--nf-input-font-family:inherit;--nf-label-font-family:inherit;--nf-input-color:#20242f;--nf-input-border-radius:0.25rem;--nf-input-placeholder-color:#929292;--nf-input-border-color:#c0c4c9;--nf-input-border-width:1px;--nf-input-border-style:solid;--nf-input-border-bottom-width:2px;--nf-input-focus-border-color:#3b4ce2;--nf-input-background-color:#f9fafb;--nf-invalid-input-border-color:var(--nf-input-border-color);--nf-invalid-input-background-color:var(--nf-input-background-color);--nf-invalid-input-color:var(--nf-input-color);--nf-valid-input-border-color:var(--nf-input-border-color);--nf-valid-input-background-color:var(--nf-input-background-color);--nf-valid-input-color:inherit;--nf-invalid-input-border-bottom-color:red;--nf-valid-input-border-bottom-color:green;--nf-label-font-size:var(--nf-small-font-size);--nf-label-color:#374151;--nf-label-font-weight:500;--nf-slider-track-background:#dfdfdf;--nf-slider-track-height:0.25rem;--nf-slider-thumb-size:calc(var(--nf-slider-track-height)*4);--nf-slider-track-border-radius:var(--nf-slider-track-height);--nf-slider-thumb-border-width:2px;--nf-slider-thumb-border-focus-width:1px;--nf-slider-thumb-border-color:#fff;--nf-slider-thumb-background:var(--nf-input-focus-border-color);display:block;margin-top:calc(var(--nf-input-size)*1.5);line-height:1;white-space:nowrap;--switch-orb-size:var(--nf-input-size);--switch-orb-offset:calc(var(--nf-input-border-width)*2);--switch-width:calc(var(--nf-input-size)*2.5);--switch-height:calc(var(--nf-input-size)*1.25 + var(--switch-orb-offset))}.nice-form-group>label{font-weight:var(--nf-label-font-weight);display:block;color:var(--nf-label-color);font-size:var(--nf-label-font-size);font-family:var(--nf-label-font-family);margin-bottom:calc(var(--nf-input-size)/2);white-space:normal}.nice-form-group>label+small{font-style:normal}.nice-form-group small{font-family:var(--nf-input-font-family);display:block;font-weight:400;opacity:.75;font-size:var(--nf-small-font-size);margin-bottom:calc(var(--nf-input-size)*0.75)}.nice-form-group small:last-child{margin-bottom:0}.nice-form-group>legend{font-weight:var(--nf-label-font-weight);display:block;color:var(--nf-label-color);font-size:var(--nf-label-font-size);font-family:var(--nf-label-font-family);margin-bottom:calc(var(--nf-input-size)/5)}.nice-form-group>.nice-form-group{margin-top:calc(var(--nf-input-size)/2)}.nice-form-group>input[type=checkbox],.nice-form-group>input[type=date],.nice-form-group>input[type=email],.nice-form-group>input[type=month],.nice-form-group>input[type=number],.nice-form-group>input[type=password],.nice-form-group>input[type=radio],.nice-form-group>input[type=search],.nice-form-group>input[type=tel],.nice-form-group>input[type=text],.nice-form-group>input[type=time],.nice-form-group>input[type=url],.nice-form-group>input[type=week],.nice-form-group>select,.nice-form-group>textarea{background:var(--nf-input-background-color);font-family:inherit;font-size:var(--nf-input-font-size);border-bottom-width:var(--nf-input-border-width);font-family:var(--nf-input-font-family);box-shadow:none;border-radius:var(--nf-input-border-radius);border:var(--nf-input-border-width) var(--nf-input-border-style) var(--nf-input-border-color);border-bottom:var(--nf-input-border-bottom-width) var(--nf-input-border-style) var(--nf-input-border-color);color:var(--nf-input-color);width:100%;padding:calc(var(--nf-input-size)*0.75);height:calc(var(--nf-input-size)*2.75);line-height:normal;-webkit-appearance:none;-moz-appearance:none;appearance:none;transition:all .15s ease-out;--icon-padding:calc(var(--nf-input-size)*2.25);--icon-background-offset:calc(var(--nf-input-size)*0.75)}.nice-form-group>input[type=checkbox]:required:not(:placeholder-shown):invalid,.nice-form-group>input[type=date]:required:not(:placeholder-shown):invalid,.nice-form-group>input[type=email]:required:not(:placeholder-shown):invalid,.nice-form-group>input[type=month]:required:not(:placeholder-shown):invalid,.nice-form-group>input[type=number]:required:not(:placeholder-shown):invalid,.nice-form-group>input[type=password]:required:not(:placeholder-shown):invalid,.nice-form-group>input[type=radio]:required:not(:placeholder-shown):invalid,.nice-form-group>input[type=search]:required:not(:placeholder-shown):invalid,.nice-form-group>input[type=tel]:required:not(:placeholder-shown):invalid,.nice-form-group>input[type=text]:required:not(:placeholder-shown):invalid,.nice-form-group>input[type=time]:required:not(:placeholder-shown):invalid,.nice-form-group>input[type=url]:required:not(:placeholder-shown):invalid,.nice-form-group>input[type=week]:required:not(:placeholder-shown):invalid,.nice-form-group>select:required:not(:placeholder-shown):invalid,.nice-form-group>textarea:required:not(:placeholder-shown):invalid{background-color:var(--nf-invalid-input-background-color);border-bottom-color:var(--nf-valid-input-border-color);border-color:var(--nf-valid-input-border-color) var(--nf-valid-input-border-color) var(--nf-invalid-input-border-bottom-color);color:var(--nf-invalid-input-color)}.nice-form-group>input[type=checkbox]:required:not(:placeholder-shown):invalid:focus,.nice-form-group>input[type=date]:required:not(:placeholder-shown):invalid:focus,.nice-form-group>input[type=email]:required:not(:placeholder-shown):invalid:focus,.nice-form-group>input[type=month]:required:not(:placeholder-shown):invalid:focus,.nice-form-group>input[type=number]:required:not(:placeholder-shown):invalid:focus,.nice-form-group>input[type=password]:required:not(:placeholder-shown):invalid:focus,.nice-form-group>input[type=radio]:required:not(:placeholder-shown):invalid:focus,.nice-form-group>input[type=search]:required:not(:placeholder-shown):invalid:focus,.nice-form-group>input[type=tel]:required:not(:placeholder-shown):invalid:focus,.nice-form-group>input[type=text]:required:not(:placeholder-shown):invalid:focus,.nice-form-group>input[type=time]:required:not(:placeholder-shown):invalid:focus,.nice-form-group>input[type=url]:required:not(:placeholder-shown):invalid:focus,.nice-form-group>input[type=week]:required:not(:placeholder-shown):invalid:focus,.nice-form-group>select:required:not(:placeholder-shown):invalid:focus,.nice-form-group>textarea:required:not(:placeholder-shown):invalid:focus{background-color:var(--nf-input-background-color);border-color:var(--nf-input-border-color);color:var(--nf-input-color)}.nice-form-group>input[type=checkbox]:required:not(:placeholder-shown):valid,.nice-form-group>input[type=date]:required:not(:placeholder-shown):valid,.nice-form-group>input[type=email]:required:not(:placeholder-shown):valid,.nice-form-group>input[type=month]:required:not(:placeholder-shown):valid,.nice-form-group>input[type=number]:required:not(:placeholder-shown):valid,.nice-form-group>input[type=password]:required:not(:placeholder-shown):valid,.nice-form-group>input[type=radio]:required:not(:placeholder-shown):valid,.nice-form-group>input[type=search]:required:not(:placeholder-shown):valid,.nice-form-group>input[type=tel]:required:not(:placeholder-shown):valid,.nice-form-group>input[type=text]:required:not(:placeholder-shown):valid,.nice-form-group>input[type=time]:required:not(:placeholder-shown):valid,.nice-form-group>input[type=url]:required:not(:placeholder-shown):valid,.nice-form-group>input[type=week]:required:not(:placeholder-shown):valid,.nice-form-group>select:required:not(:placeholder-shown):valid,.nice-form-group>textarea:required:not(:placeholder-shown):valid{background-color:var(--nf-valid-input-background-color);border-bottom-color:var(--nf-valid-input-border-color);border-color:var(--nf-valid-input-border-color) var(--nf-valid-input-border-color) var(--nf-valid-input-border-bottom-color);color:var(--nf-valid-input-color)}.nice-form-group>input[type=checkbox]:disabled,.nice-form-group>input[type=date]:disabled,.nice-form-group>input[type=email]:disabled,.nice-form-group>input[type=month]:disabled,.nice-form-group>input[type=number]:disabled,.nice-form-group>input[type=password]:disabled,.nice-form-group>input[type=radio]:disabled,.nice-form-group>input[type=search]:disabled,.nice-form-group>input[type=tel]:disabled,.nice-form-group>input[type=text]:disabled,.nice-form-group>input[type=time]:disabled,.nice-form-group>input[type=url]:disabled,.nice-form-group>input[type=week]:disabled,.nice-form-group>select:disabled,.nice-form-group>textarea:disabled{cursor:not-allowed;opacity:.75}.nice-form-group>input[type=checkbox]::-webkit-input-placeholder,.nice-form-group>input[type=date]::-webkit-input-placeholder,.nice-form-group>input[type=email]::-webkit-input-placeholder,.nice-form-group>input[type=month]::-webkit-input-placeholder,.nice-form-group>input[type=number]::-webkit-input-placeholder,.nice-form-group>input[type=password]::-webkit-input-placeholder,.nice-form-group>input[type=radio]::-webkit-input-placeholder,.nice-form-group>input[type=search]::-webkit-input-placeholder,.nice-form-group>input[type=tel]::-webkit-input-placeholder,.nice-form-group>input[type=text]::-webkit-input-placeholder,.nice-form-group>input[type=time]::-webkit-input-placeholder,.nice-form-group>input[type=url]::-webkit-input-placeholder,.nice-form-group>input[type=week]::-webkit-input-placeholder,.nice-form-group>select::-webkit-input-placeholder,.nice-form-group>textarea::-webkit-input-placeholder{color:var(--nf-input-placeholder-color);letter-spacing:0}.nice-form-group>input[type=checkbox]:-ms-input-placeholder,.nice-form-group>input[type=date]:-ms-input-placeholder,.nice-form-group>input[type=email]:-ms-input-placeholder,.nice-form-group>input[type=month]:-ms-input-placeholder,.nice-form-group>input[type=number]:-ms-input-placeholder,.nice-form-group>input[type=password]:-ms-input-placeholder,.nice-form-group>input[type=radio]:-ms-input-placeholder,.nice-form-group>input[type=search]:-ms-input-placeholder,.nice-form-group>input[type=tel]:-ms-input-placeholder,.nice-form-group>input[type=text]:-ms-input-placeholder,.nice-form-group>input[type=time]:-ms-input-placeholder,.nice-form-group>input[type=url]:-ms-input-placeholder,.nice-form-group>input[type=week]:-ms-input-placeholder,.nice-form-group>select:-ms-input-placeholder,.nice-form-group>textarea:-ms-input-placeholder{color:var(--nf-input-placeholder-color);letter-spacing:0}.nice-form-group>input[type=checkbox]:-moz-placeholder,.nice-form-group>input[type=checkbox]::-moz-placeholder,.nice-form-group>input[type=date]:-moz-placeholder,.nice-form-group>input[type=date]::-moz-placeholder,.nice-form-group>input[type=email]:-moz-placeholder,.nice-form-group>input[type=email]::-moz-placeholder,.nice-form-group>input[type=month]:-moz-placeholder,.nice-form-group>input[type=month]::-moz-placeholder,.nice-form-group>input[type=number]:-moz-placeholder,.nice-form-group>input[type=number]::-moz-placeholder,.nice-form-group>input[type=password]:-moz-placeholder,.nice-form-group>input[type=password]::-moz-placeholder,.nice-form-group>input[type=radio]:-moz-placeholder,.nice-form-group>input[type=radio]::-moz-placeholder,.nice-form-group>input[type=search]:-moz-placeholder,.nice-form-group>input[type=search]::-moz-placeholder,.nice-form-group>input[type=tel]:-moz-placeholder,.nice-form-group>input[type=tel]::-moz-placeholder,.nice-form-group>input[type=text]:-moz-placeholder,.nice-form-group>input[type=text]::-moz-placeholder,.nice-form-group>input[type=time]:-moz-placeholder,.nice-form-group>input[type=time]::-moz-placeholder,.nice-form-group>input[type=url]:-moz-placeholder,.nice-form-group>input[type=url]::-moz-placeholder,.nice-form-group>input[type=week]:-moz-placeholder,.nice-form-group>input[type=week]::-moz-placeholder,.nice-form-group>select:-moz-placeholder,.nice-form-group>select::-moz-placeholder,.nice-form-group>textarea:-moz-placeholder,.nice-form-group>textarea::-moz-placeholder{color:var(--nf-input-placeholder-color);letter-spacing:0}.nice-form-group>input[type=checkbox]:focus,.nice-form-group>input[type=date]:focus,.nice-form-group>input[type=email]:focus,.nice-form-group>input[type=month]:focus,.nice-form-group>input[type=number]:focus,.nice-form-group>input[type=password]:focus,.nice-form-group>input[type=radio]:focus,.nice-form-group>input[type=search]:focus,.nice-form-group>input[type=tel]:focus,.nice-form-group>input[type=text]:focus,.nice-form-group>input[type=time]:focus,.nice-form-group>input[type=url]:focus,.nice-form-group>input[type=week]:focus,.nice-form-group>select:focus,.nice-form-group>textarea:focus{outline:none;border-color:var(--nf-input-focus-border-color)}.nice-form-group>input[type=checkbox]+small,.nice-form-group>input[type=date]+small,.nice-form-group>input[type=email]+small,.nice-form-group>input[type=month]+small,.nice-form-group>input[type=number]+small,.nice-form-group>input[type=password]+small,.nice-form-group>input[type=radio]+small,.nice-form-group>input[type=search]+small,.nice-form-group>input[type=tel]+small,.nice-form-group>input[type=text]+small,.nice-form-group>input[type=time]+small,.nice-form-group>input[type=url]+small,.nice-form-group>input[type=week]+small,.nice-form-group>select+small,.nice-form-group>textarea+small{margin-top:.5rem}.nice-form-group>input[type=checkbox].icon-left,.nice-form-group>input[type=date].icon-left,.nice-form-group>input[type=email].icon-left,.nice-form-group>input[type=month].icon-left,.nice-form-group>input[type=number].icon-left,.nice-form-group>input[type=password].icon-left,.nice-form-group>input[type=radio].icon-left,.nice-form-group>input[type=search].icon-left,.nice-form-group>input[type=tel].icon-left,.nice-form-group>input[type=text].icon-left,.nice-form-group>input[type=time].icon-left,.nice-form-group>input[type=url].icon-left,.nice-form-group>input[type=week].icon-left,.nice-form-group>select.icon-left,.nice-form-group>textarea.icon-left{background-position:left var(--icon-background-offset) bottom 50%;padding-left:var(--icon-padding);background-size:var(--nf-input-size)}.nice-form-group>input[type=checkbox].icon-right,.nice-form-group>input[type=date].icon-right,.nice-form-group>input[type=email].icon-right,.nice-form-group>input[type=month].icon-right,.nice-form-group>input[type=number].icon-right,.nice-form-group>input[type=password].icon-right,.nice-form-group>input[type=radio].icon-right,.nice-form-group>input[type=search].icon-right,.nice-form-group>input[type=tel].icon-right,.nice-form-group>input[type=text].icon-right,.nice-form-group>input[type=time].icon-right,.nice-form-group>input[type=url].icon-right,.nice-form-group>input[type=week].icon-right,.nice-form-group>select.icon-right,.nice-form-group>textarea.icon-right{background-position:right var(--icon-background-offset) bottom 50%;padding-right:var(--icon-padding);background-size:var(--nf-input-size)}.nice-form-group>input[type=checkbox]:-webkit-autofill,.nice-form-group>input[type=date]:-webkit-autofill,.nice-form-group>input[type=email]:-webkit-autofill,.nice-form-group>input[type=month]:-webkit-autofill,.nice-form-group>input[type=number]:-webkit-autofill,.nice-form-group>input[type=password]:-webkit-autofill,.nice-form-group>input[type=radio]:-webkit-autofill,.nice-form-group>input[type=search]:-webkit-autofill,.nice-form-group>input[type=tel]:-webkit-autofill,.nice-form-group>input[type=text]:-webkit-autofill,.nice-form-group>input[type=time]:-webkit-autofill,.nice-form-group>input[type=url]:-webkit-autofill,.nice-form-group>input[type=week]:-webkit-autofill,.nice-form-group>select:-webkit-autofill,.nice-form-group>textarea:-webkit-autofill{padding:calc(var(--nf-input-size)*0.75)!important}.nice-form-group>input[type=search]:placeholder-shown{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-search'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='M21 21l-4.35-4.35'/%3E%3C/svg%3E");background-position:left calc(var(--nf-input-size)*0.75) bottom 50%;padding-left:calc(var(--nf-input-size)*2.25);background-size:var(--nf-input-size);background-repeat:no-repeat}.nice-form-group>input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:var(--nf-input-size);height:var(--nf-input-size);background:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-x'%3E%3Cpath d='M18 6L6 18M6 6l12 12'/%3E%3C/svg%3E")}.nice-form-group>input[type=search]:focus{padding-left:calc(var(--nf-input-size)*0.75);background-position:left calc(var(--nf-input-size)*-1) bottom 50%}.nice-form-group>input[type=email][class^=icon]{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-at-sign'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cpath d='M16 8v5a3 3 0 006 0v-1a10 10 0 10-3.92 7.94'/%3E%3C/svg%3E");background-repeat:no-repeat}.nice-form-group>input[type=tel][class^=icon]{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-phone'%3E%3Cpath d='M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z'/%3E%3C/svg%3E");background-repeat:no-repeat}.nice-form-group>input[type=url][class^=icon]{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-link'%3E%3Cpath d='M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71'/%3E%3Cpath d='M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71'/%3E%3C/svg%3E");background-repeat:no-repeat}.nice-form-group>input[type=password]{letter-spacing:2px}.nice-form-group>input[type=password][class^=icon]{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-lock'%3E%3Crect x='3' y='11' width='18' height='11' rx='2' ry='2'/%3E%3Cpath d='M7 11V7a5 5 0 0110 0v4'/%3E%3C/svg%3E");background-repeat:no-repeat}.nice-form-group>input[type=range]{-webkit-appearance:none;width:100%;cursor:pointer}.nice-form-group>input[type=range]:focus{outline:none}.nice-form-group>input[type=range]::-webkit-slider-runnable-track{width:100%;height:var(--nf-slider-track-height);background:var(--nf-slider-track-background);border-radius:var(--nf-slider-track-border-radius)}.nice-form-group>input[type=range]::-moz-range-track{width:100%;height:var(--nf-slider-track-height);background:var(--nf-slider-track-background);border-radius:var(--nf-slider-track-border-radius)}.nice-form-group>input[type=range]::-webkit-slider-thumb{height:var(--nf-slider-thumb-size);width:var(--nf-slider-thumb-size);border-radius:var(--nf-slider-thumb-size);background:var(--nf-slider-thumb-background);border:0;border:var(--nf-slider-thumb-border-width) solid var(--nf-slider-thumb-border-color);-webkit-appearance:none;appearance:none;margin-top:calc(var(--nf-slider-track-height)*0.5 - var(--nf-slider-thumb-size)*0.5)}.nice-form-group>input[type=range]::-moz-range-thumb{height:var(--nf-slider-thumb-size);width:var(--nf-slider-thumb-size);border-radius:var(--nf-slider-thumb-size);background:var(--nf-slider-thumb-background);border:0;border:var(--nf-slider-thumb-border-width) solid var(--nf-slider-thumb-border-color);-moz-appearance:none;appearance:none;box-sizing:border-box}.nice-form-group>input[type=range]:focus::-webkit-slider-thumb{box-shadow:0 0 0 var(--nf-slider-thumb-border-focus-width) var(--nf-slider-thumb-background)}.nice-form-group>input[type=range]:focus::-moz-range-thumb{box-shadow:0 0 0 var(--nf-slider-thumb-border-focus-width) var(--nf-slider-thumb-background)}.nice-form-group>input[type=color]{border:var(--nf-input-border-width) solid var(--nf-input-border-color);border-bottom-width:var(--nf-input-border-bottom-width);height:calc(var(--nf-input-size)*2);border-radius:var(--nf-input-border-radius);padding:calc(var(--nf-input-border-width)*2)}.nice-form-group>input[type=color]:focus{outline:none;border-color:var(--nf-input-focus-border-color)}.nice-form-group>input[type=color]::-webkit-color-swatch-wrapper{padding:5%}.nice-form-group>input[type=color]::-moz-color-swatch{border-radius:calc(var(--nf-input-border-radius)/2);border:none}.nice-form-group>input[type=color]::-webkit-color-swatch{border-radius:calc(var(--nf-input-border-radius)/2);border:none}.nice-form-group>input[type=number]{width:auto}.nice-form-group>input[type=date],.nice-form-group>input[type=month],.nice-form-group>input[type=week]{min-width:14em;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-calendar'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'/%3E%3Cpath d='M16 2v4M8 2v4M3 10h18'/%3E%3C/svg%3E")}.nice-form-group>input[type=time]{min-width:6em;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-clock'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 6v6l4 2'/%3E%3C/svg%3E")}.nice-form-group>input[type=date],.nice-form-group>input[type=month],.nice-form-group>input[type=time],.nice-form-group>input[type=week]{background-position:right calc(var(--nf-input-size)*0.75) bottom 50%;background-repeat:no-repeat;background-size:var(--nf-input-size);width:auto}.nice-form-group>input[type=date]::-webkit-calendar-picker-indicator,.nice-form-group>input[type=date]::-webkit-inner-spin-button,.nice-form-group>input[type=month]::-webkit-calendar-picker-indicator,.nice-form-group>input[type=month]::-webkit-inner-spin-button,.nice-form-group>input[type=time]::-webkit-calendar-picker-indicator,.nice-form-group>input[type=time]::-webkit-inner-spin-button,.nice-form-group>input[type=week]::-webkit-calendar-picker-indicator,.nice-form-group>input[type=week]::-webkit-inner-spin-button{-webkit-appearance:none;cursor:pointer;opacity:0}@-moz-document url-prefix(){.nice-form-group>input[type=date],.nice-form-group>input[type=month],.nice-form-group>input[type=time],.nice-form-group>input[type=week]{min-width:auto;width:auto;background-image:none}}.nice-form-group>textarea{height:auto}.nice-form-group>input[type=checkbox],.nice-form-group>input[type=radio]{width:var(--nf-input-size);height:var(--nf-input-size);padding:inherit;margin:0;display:inline-block;vertical-align:top;border-radius:calc(var(--nf-input-border-radius)/2);border-width:var(--nf-input-border-width);cursor:pointer;background-position:50%}.nice-form-group>input[type=checkbox]:focus:not(:checked),.nice-form-group>input[type=radio]:focus:not(:checked){border:var(--nf-input-border-width) solid var(--nf-input-focus-border-color);outline:none}.nice-form-group>input[type=checkbox]:hover,.nice-form-group>input[type=radio]:hover{border:var(--nf-input-border-width) solid var(--nf-input-focus-border-color)}.nice-form-group>input[type=checkbox]+label,.nice-form-group>input[type=radio]+label{display:inline-block;margin-bottom:0;padding-left:calc(var(--nf-input-size)/2.5);font-weight:400;-webkit-user-select:none;user-select:none;cursor:pointer;max-width:calc(100% - var(--nf-input-size)*2);line-height:normal}.nice-form-group>input[type=checkbox]+label>small,.nice-form-group>input[type=radio]+label>small{margin-top:calc(var(--nf-input-size)/4)}.nice-form-group>input[type=checkbox]:checked{background:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E") no-repeat 50%/85%;background-color:var(--nf-input-focus-border-color);border-color:var(--nf-input-focus-border-color)}.nice-form-group>input[type=radio]{border-radius:100%}.nice-form-group>input[type=radio]:checked{background-color:var(--nf-input-focus-border-color);border-color:var(--nf-input-focus-border-color);box-shadow:inset 0 0 0 3px #fff}.nice-form-group>input[type=checkbox].switch{width:var(--switch-width);height:var(--switch-height);border-radius:var(--switch-height);position:relative}.nice-form-group>input[type=checkbox].switch:after{background:var(--nf-input-border-color);border-radius:var(--switch-orb-size);height:var(--switch-orb-size);left:var(--switch-orb-offset);position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);width:var(--switch-orb-size);content:"";transition:all .2s ease-out}.nice-form-group>input[type=checkbox].switch+label{margin-top:calc(var(--switch-height)/8)}.nice-form-group>input[type=checkbox].switch:checked{background:none;background-position:0 0;background-color:var(--nf-input-focus-border-color)}.nice-form-group>input[type=checkbox].switch:checked:after{-webkit-transform:translateY(-50%) translateX(calc(var(--switch-width)/2 - var(--switch-orb-offset)));transform:translateY(-50%) translateX(calc(var(--switch-width)/2 - var(--switch-orb-offset)));background:#fff}.nice-form-group>input[type=file]{background:rgba(0,0,0,.025);padding:var(--nf-input-size);display:block;width:100%;border-radius:var(--nf-input-border-radius);border:1px dashed var(--nf-input-border-color);outline:none;cursor:pointer}.nice-form-group>input[type=file]:focus,.nice-form-group>input[type=file]:hover{border-color:var(--nf-input-focus-border-color)}.nice-form-group>input[type=file]::file-selector-button{background:var(--nf-input-focus-border-color);border:0;-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:.5rem;border-radius:var(--nf-input-border-radius);color:#fff;margin-right:1rem;outline:none;font-family:var(--nf-input-font-family);cursor:pointer}.nice-form-group>input[type=file]::-webkit-file-upload-button{background:var(--nf-input-focus-border-color);border:0;-webkit-appearance:none;appearance:none;padding:.5rem;border-radius:var(--nf-input-border-radius);color:#fff;margin-right:1rem;outline:none;font-family:var(--nf-input-font-family);cursor:pointer}.nice-form-group>select{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-position:right calc(var(--nf-input-size)*0.75) bottom 50%;background-repeat:no-repeat;background-size:var(--nf-input-size)}*,:after,:before{box-sizing:inherit}html{font-size:16px;box-sizing:border-box}body{background:#f3f0e7;font-family:Roboto,sans-serif;color:#4b5563;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.demo-page{margin:0 auto;display:-webkit-flex;display:flex;max-width:55em}.demo-page .demo-page-navigation{width:18em;padding:2em 1em}@media only screen and (max-width:750px){.demo-page .demo-page-navigation{display:none}}.demo-page .demo-page-navigation nav{position:-webkit-sticky;position:sticky;top:2em;background:#fff;padding:.5em;border-radius:.75rem;box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)}.demo-page .demo-page-navigation a{display:-webkit-flex;display:flex;padding:.75em 1em;text-decoration:none;border-radius:.25em;color:#374151;-webkit-align-items:center;align-items:center}.demo-page .demo-page-navigation a:hover{background:#f3f4f6}.demo-page .demo-page-navigation a svg{width:1.25em;height:1.25em;margin-right:1em;color:#1f2937}.demo-page .demo-page-content{padding:2em 1em;max-width:100%}@media only screen and (min-width:750px){.demo-page .demo-page-content{width:calc(100% - 18em)}}footer{text-align:center;margin:2.5em 0}.href-target{position:absolute;top:-2em}.to-repo,.to-reset{display:-webkit-inline-flex;display:inline-flex;background:#24292e;color:#fff;border-radius:5px;padding:.5em 1em;text-decoration:none;-webkit-align-items:center;align-items:center;transition:background .2s ease-out}.to-repo:hover,.to-reset:hover{background:#000}.to-repo svg,.to-reset svg{width:1.125rem;height:1.125rem;margin-right:.75em}.to-reset{background:#3b4ce2}.to-reset:hover{background:#2538df}section{background:#fff;padding:2em;border-radius:.75rem;line-height:1.6;overflow:hidden;margin-bottom:2rem;position:relative;font-size:.875rem;box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)}section h1{font-weight:500;font-size:1.25rem;color:#000;margin-bottom:.75rem}section h1 svg{width:1em;height:1em;display:inline-block;vertical-align:-10%;margin-right:.25em}section h1.package-name{font-size:2rem;margin-bottom:.75rem;margin-top:-.5rem}section strong{font-weight:500;color:#000}section p{margin:.5rem 0 1.5rem}section p a{text-decoration:none;font-weight:500;color:#3b4ce2}section p:last-child{margin-bottom:0}section code{font-weight:500;font-family:Consolas,monaco,monospace;position:relative;z-index:1;margin:0 2px;background:#f3f4f4;content:"";border-radius:3px;padding:2px 5px;white-space:nowrap}section ul{margin-top:.5em;padding-left:1em;list-style-type:disc}details{background:#f1f1f1;margin:2em -2em -2em;padding:1.5em 2em}details .gist{margin-top:1.5em}details .toggle-code{display:inline-block;padding:.5em 1em;border-radius:5px;font-size:.875rem;background:#10b981;top:1em;right:1em;color:#fff;font-weight:500;-webkit-user-select:none;user-select:none;cursor:pointer}details .toggle-code:hover{background:#0ea271}details .toggle-code svg{display:inline-block;vertical-align:-15%;margin-right:.25em}details summary{outline:none;list-style-type:none}details summary::marker{display:none}details summary::-webkit-details-marker{display:none}
+  </style>
+  <div class="demo-page-navigation">
+    <nav>
+      <ul>
+        <li>
+          <a href="#Persinfo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            Pers. Informationen</a>
+        </li>
+        <li>
+          <a href="#Standort">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Standort Anlage</a>
+        </li>
+        <li>
+          <a href="#Aktelek">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            Akt. Stromversorgung</a>
+        </li>
+        <li>
+          <a href="#Auto">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.71454 16.826C8.7177 17.7092 8.20137 18.5073 7.40665 18.8476C6.61193 19.1878 5.6956 19.0031 5.08554 18.3797C4.47547 17.7563 4.29202 16.8172 4.62085 16.0008C4.94968 15.1845 5.72591 14.652 6.58709 14.652C7.15029 14.6509 7.69084 14.8794 8.08981 15.2871C8.48879 15.6948 8.71351 16.2483 8.71454 16.826Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.1636 16.826C19.1667 17.7092 18.6504 18.5073 17.8557 18.8476C17.061 19.1878 16.1446 19.0031 15.5346 18.3797C14.9245 17.7563 14.7411 16.8172 15.0699 16.0008C15.3987 15.1845 16.1749 14.652 17.0361 14.652C17.5993 14.6509 18.1399 14.8794 18.5388 15.2871C18.9378 15.6948 19.1625 16.2483 19.1636 16.826Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M2.61096 9.99042C2.46815 10.3792 2.66758 10.8102 3.05639 10.953C3.44521 11.0958 3.87618 10.8964 4.01899 10.5076L2.61096 9.99042ZM4.0628 8.213L3.36486 7.93844C3.36278 7.94374 3.36075 7.94907 3.35879 7.95442L4.0628 8.213ZM9.79678 5.75C10.211 5.75 10.5468 5.41421 10.5468 5C10.5468 4.58579 10.211 4.25 9.79678 4.25V5.75ZM3.31498 10.999C3.72919 10.999 4.06498 10.6632 4.06498 10.249C4.06498 9.83479 3.72919 9.499 3.31498 9.499V10.999ZM2.0387 10.249L2.033 10.999H2.0387V10.249ZM1.28976 10.5605L1.82287 11.0881L1.82287 11.0881L1.28976 10.5605ZM0.974976 11.324L0.224976 11.3186V11.324H0.974976ZM0.224976 13C0.224976 13.4142 0.560762 13.75 0.974976 13.75C1.38919 13.75 1.72498 13.4142 1.72498 13H0.224976ZM3.31498 9.499C2.90076 9.499 2.56498 9.83479 2.56498 10.249C2.56498 10.6632 2.90076 10.999 3.31498 10.999V9.499ZM9.79678 10.999C10.211 10.999 10.5468 10.6632 10.5468 10.249C10.5468 9.83479 10.211 9.499 9.79678 9.499V10.999ZM17.5236 10.5076C17.6664 10.8964 18.0974 11.0958 18.4862 10.953C18.875 10.8102 19.0744 10.3792 18.9316 9.99042L17.5236 10.5076ZM17.4798 8.213L18.1838 7.95442C18.1818 7.94907 18.1798 7.94374 18.1777 7.93844L17.4798 8.213ZM9.79678 4.25C9.38256 4.25 9.04678 4.58579 9.04678 5C9.04678 5.41421 9.38256 5.75 9.79678 5.75V4.25ZM18.2276 10.999C18.6418 10.999 18.9776 10.6632 18.9776 10.249C18.9776 9.83479 18.6418 9.499 18.2276 9.499V10.999ZM9.79678 9.499C9.38256 9.499 9.04678 9.83479 9.04678 10.249C9.04678 10.6632 9.38256 10.999 9.79678 10.999V9.499ZM18.2276 9.499C17.8134 9.499 17.4776 9.83479 17.4776 10.249C17.4776 10.6632 17.8134 10.999 18.2276 10.999V9.499ZM21.3622 10.249L21.3622 10.999L21.3672 10.999L21.3622 10.249ZM22.425 11.324L23.175 11.324L23.175 11.3186L22.425 11.324ZM21.675 13C21.675 13.4142 22.0108 13.75 22.425 13.75C22.8392 13.75 23.175 13.4142 23.175 13H21.675ZM14.9087 17.576C15.3229 17.576 15.6587 17.2402 15.6587 16.826C15.6587 16.4118 15.3229 16.076 14.9087 16.076V17.576ZM8.71453 16.076C8.30031 16.076 7.96453 16.4118 7.96453 16.826C7.96453 17.2402 8.30031 17.576 8.71453 17.576V16.076ZM19.1636 16.076C18.7494 16.076 18.4136 16.4118 18.4136 16.826C18.4136 17.2402 18.7494 17.576 19.1636 17.576V16.076ZM21.3613 16.826L21.367 16.076H21.3613V16.826ZM22.1102 16.5145L21.5771 15.9869L21.5771 15.9869L22.1102 16.5145ZM22.425 15.751L23.175 15.7564V15.751H22.425ZM23.175 13C23.175 12.5858 22.8392 12.25 22.425 12.25C22.0108 12.25 21.675 12.5858 21.675 13H23.175ZM4.45963 17.576C4.87384 17.576 5.20963 17.2402 5.20963 16.826C5.20963 16.4118 4.87384 16.076 4.45963 16.076V17.576ZM2.0387 16.826L2.0387 16.076L2.033 16.076L2.0387 16.826ZM0.974976 15.751L0.224956 15.751L0.224995 15.7564L0.974976 15.751ZM1.72498 13C1.72498 12.5858 1.38919 12.25 0.974976 12.25C0.560762 12.25 0.224976 12.5858 0.224976 13H1.72498ZM10.5468 5C10.5468 4.58579 10.211 4.25 9.79678 4.25C9.38256 4.25 9.04678 4.58579 9.04678 5H10.5468ZM9.04678 10.249C9.04678 10.6632 9.38256 10.999 9.79678 10.999C10.211 10.999 10.5468 10.6632 10.5468 10.249H9.04678ZM0.974976 12.25C0.560762 12.25 0.224976 12.5858 0.224976 13C0.224976 13.4142 0.560762 13.75 0.974976 13.75V12.25ZM2.91815 13.75C3.33236 13.75 3.66815 13.4142 3.66815 13C3.66815 12.5858 3.33236 12.25 2.91815 12.25V13.75ZM22.425 13.75C22.8392 13.75 23.175 13.4142 23.175 13C23.175 12.5858 22.8392 12.25 22.425 12.25V13.75ZM20.3999 12.25C19.9857 12.25 19.6499 12.5858 19.6499 13C19.6499 13.4142 19.9857 13.75 20.3999 13.75V12.25ZM4.01899 10.5076L4.76681 8.47158L3.35879 7.95442L2.61096 9.99042L4.01899 10.5076ZM4.76074 8.48756C5.12559 7.5601 5.49128 6.87863 5.94824 6.42712C6.37329 6.00714 6.91377 5.75 7.74245 5.75V4.25C6.53923 4.25 5.6138 4.64886 4.89396 5.36013C4.20602 6.03987 3.74784 6.9649 3.36486 7.93844L4.76074 8.48756ZM7.74245 5.75H9.79678V4.25H7.74245V5.75ZM3.31498 9.499H2.0387V10.999H3.31498V9.499ZM2.0444 9.49902C1.55922 9.49533 1.09635 9.6897 0.756637 10.033L1.82287 11.0881C1.88214 11.0282 1.95808 10.9984 2.033 10.999L2.0444 9.49902ZM0.756637 10.033C0.41756 10.3757 0.22844 10.8385 0.224995 11.3186L1.72496 11.3294C1.72563 11.235 1.76297 11.1486 1.82287 11.0881L0.756637 10.033ZM0.224976 11.324V13H1.72498V11.324H0.224976ZM3.31498 10.999H9.79678V9.499H3.31498V10.999ZM18.9316 9.99042L18.1838 7.95442L16.7758 8.47158L17.5236 10.5076L18.9316 9.99042ZM18.1777 7.93844C17.7947 6.9649 17.3366 6.03987 16.6486 5.36013C15.9288 4.64886 15.0033 4.25 13.8001 4.25V5.75C14.6288 5.75 15.1693 6.00714 15.5943 6.42712C16.0513 6.87863 16.417 7.5601 16.7818 8.48756L18.1777 7.93844ZM13.8001 4.25H9.79678V5.75H13.8001V4.25ZM18.2276 9.499H9.79678V10.999H18.2276V9.499ZM18.2276 10.999H21.3622V9.499H18.2276V10.999ZM21.3672 10.999C21.5182 10.998 21.6735 11.1277 21.675 11.3294L23.175 11.3186C23.1678 10.3248 22.3719 9.49226 21.3572 9.49902L21.3672 10.999ZM21.675 11.324V13H23.175V11.324H21.675ZM14.9087 16.076H8.71453V17.576H14.9087V16.076ZM19.1636 17.576H21.3613V16.076H19.1636V17.576ZM21.3555 17.576C21.8407 17.5797 22.3036 17.3853 22.6433 17.042L21.5771 15.9869C21.5178 16.0468 21.4419 16.0766 21.367 16.076L21.3555 17.576ZM22.6433 17.042C22.9824 16.6993 23.1715 16.2365 23.175 15.7564L21.675 15.7456C21.6743 15.84 21.637 15.9264 21.5771 15.9869L22.6433 17.042ZM23.175 15.751V13H21.675V15.751H23.175ZM4.45963 16.076H2.0387V17.576H4.45963V16.076ZM2.033 16.076C1.95808 16.0766 1.88214 16.0468 1.82287 15.9869L0.756638 17.042C1.09635 17.3853 1.55922 17.5797 2.0444 17.576L2.033 16.076ZM1.82287 15.9869C1.76297 15.9264 1.72563 15.84 1.72496 15.7456L0.224995 15.7564C0.22844 16.2365 0.41756 16.6993 0.756638 17.042L1.82287 15.9869ZM1.72498 15.751V13H0.224976V15.751H1.72498ZM9.04678 5V10.249H10.5468V5H9.04678ZM0.974976 13.75H2.91815V12.25H0.974976V13.75ZM22.425 12.25H20.3999V13.75H22.425V12.25Z" fill="#000000"></path>
+</svg>
+            Auto</a>
+        </li>
+        <li>
+          <a href="#Batt">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-battery-charging"><path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19"></path><line x1="23" y1="13" x2="23" y2="11"></line><polyline points="11 6 7 12 13 12 9 18"></polyline></svg>
+            Batteriespeicher</a>
+        </li>
+        <li>
+          <a href="#WarWas">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-coffee"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+            Warmwasser</a>
+        </li>
+        <li>
+          <a href="#Heizu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thermometer"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path></svg>
+            Heizung</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <main class="demo-page-content">
+    
+    
+<form action="https://service.capsulecrm.com/service/newlead" accept-charset="UTF-8" method="post">
+<input type="hidden" name="FORM_ID" value="777cef0a-6c3c-4039-b05f-84b2eca2f2e0">
+  <section>
+      <div class="href-target" id="Persinfo"></div>
+      <h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      
+        Persönliche Informationen
+      </h1>
+<input type="hidden" name="COMPLETE_URL" value="http://paxos.gmbh">
+  
+  <div class="nice-form-group">
+<input type="text" placeholder="Vorname">
+  </div>
+   <div class="nice-form-group">
+<input type="text" placeholder="Nachname">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Straße">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Hausnummer">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Ort">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Postleitzahl">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Telefonnummer">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="E-Mail">
+  </div>
+  </section>
+  <section>
+      <div class="href-target" id="Standort"></div>
+      <h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+      
+        Standort Anlage
+      </h1>
+<input type="hidden" name="COMPLETE_URL" value="http://paxos.gmbh">
+  
+  <div class="nice-form-group">
+<input type="text" placeholder="Vorname">
+  </div>
+   <div class="nice-form-group">
+<input type="text" placeholder="Nachname">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Straße">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Hausnummer">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Ort">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Postleitzahl">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Telefonnummer">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="E-Mail">
+  </div>
+  </section>
+  <section>
+      <div class="href-target" id="Aktelek"></div>
+      <h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+      
+        Aktuelle Stromversorgung
+      </h1>
+<input type="hidden" name="COMPLETE_URL" value="http://paxos.gmbh">
+  
+  <div class="nice-form-group">
+<input type="text" placeholder="Vorname">
+  </div>
+   <div class="nice-form-group">
+<input type="text" placeholder="Nachname">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Straße">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Hausnummer">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Ort">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Postleitzahl">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Telefonnummer">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="E-Mail">
+  </div>
+  </section>
+  <section>
+      <div class="href-target" id="Auto"></div>
+      <h1>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.71454 16.826C8.7177 17.7092 8.20137 18.5073 7.40665 18.8476C6.61193 19.1878 5.6956 19.0031 5.08554 18.3797C4.47547 17.7563 4.29202 16.8172 4.62085 16.0008C4.94968 15.1845 5.72591 14.652 6.58709 14.652C7.15029 14.6509 7.69084 14.8794 8.08981 15.2871C8.48879 15.6948 8.71351 16.2483 8.71454 16.826Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.1636 16.826C19.1667 17.7092 18.6504 18.5073 17.8557 18.8476C17.061 19.1878 16.1446 19.0031 15.5346 18.3797C14.9245 17.7563 14.7411 16.8172 15.0699 16.0008C15.3987 15.1845 16.1749 14.652 17.0361 14.652C17.5993 14.6509 18.1399 14.8794 18.5388 15.2871C18.9378 15.6948 19.1625 16.2483 19.1636 16.826Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M2.61096 9.99042C2.46815 10.3792 2.66758 10.8102 3.05639 10.953C3.44521 11.0958 3.87618 10.8964 4.01899 10.5076L2.61096 9.99042ZM4.0628 8.213L3.36486 7.93844C3.36278 7.94374 3.36075 7.94907 3.35879 7.95442L4.0628 8.213ZM9.79678 5.75C10.211 5.75 10.5468 5.41421 10.5468 5C10.5468 4.58579 10.211 4.25 9.79678 4.25V5.75ZM3.31498 10.999C3.72919 10.999 4.06498 10.6632 4.06498 10.249C4.06498 9.83479 3.72919 9.499 3.31498 9.499V10.999ZM2.0387 10.249L2.033 10.999H2.0387V10.249ZM1.28976 10.5605L1.82287 11.0881L1.82287 11.0881L1.28976 10.5605ZM0.974976 11.324L0.224976 11.3186V11.324H0.974976ZM0.224976 13C0.224976 13.4142 0.560762 13.75 0.974976 13.75C1.38919 13.75 1.72498 13.4142 1.72498 13H0.224976ZM3.31498 9.499C2.90076 9.499 2.56498 9.83479 2.56498 10.249C2.56498 10.6632 2.90076 10.999 3.31498 10.999V9.499ZM9.79678 10.999C10.211 10.999 10.5468 10.6632 10.5468 10.249C10.5468 9.83479 10.211 9.499 9.79678 9.499V10.999ZM17.5236 10.5076C17.6664 10.8964 18.0974 11.0958 18.4862 10.953C18.875 10.8102 19.0744 10.3792 18.9316 9.99042L17.5236 10.5076ZM17.4798 8.213L18.1838 7.95442C18.1818 7.94907 18.1798 7.94374 18.1777 7.93844L17.4798 8.213ZM9.79678 4.25C9.38256 4.25 9.04678 4.58579 9.04678 5C9.04678 5.41421 9.38256 5.75 9.79678 5.75V4.25ZM18.2276 10.999C18.6418 10.999 18.9776 10.6632 18.9776 10.249C18.9776 9.83479 18.6418 9.499 18.2276 9.499V10.999ZM9.79678 9.499C9.38256 9.499 9.04678 9.83479 9.04678 10.249C9.04678 10.6632 9.38256 10.999 9.79678 10.999V9.499ZM18.2276 9.499C17.8134 9.499 17.4776 9.83479 17.4776 10.249C17.4776 10.6632 17.8134 10.999 18.2276 10.999V9.499ZM21.3622 10.249L21.3622 10.999L21.3672 10.999L21.3622 10.249ZM22.425 11.324L23.175 11.324L23.175 11.3186L22.425 11.324ZM21.675 13C21.675 13.4142 22.0108 13.75 22.425 13.75C22.8392 13.75 23.175 13.4142 23.175 13H21.675ZM14.9087 17.576C15.3229 17.576 15.6587 17.2402 15.6587 16.826C15.6587 16.4118 15.3229 16.076 14.9087 16.076V17.576ZM8.71453 16.076C8.30031 16.076 7.96453 16.4118 7.96453 16.826C7.96453 17.2402 8.30031 17.576 8.71453 17.576V16.076ZM19.1636 16.076C18.7494 16.076 18.4136 16.4118 18.4136 16.826C18.4136 17.2402 18.7494 17.576 19.1636 17.576V16.076ZM21.3613 16.826L21.367 16.076H21.3613V16.826ZM22.1102 16.5145L21.5771 15.9869L21.5771 15.9869L22.1102 16.5145ZM22.425 15.751L23.175 15.7564V15.751H22.425ZM23.175 13C23.175 12.5858 22.8392 12.25 22.425 12.25C22.0108 12.25 21.675 12.5858 21.675 13H23.175ZM4.45963 17.576C4.87384 17.576 5.20963 17.2402 5.20963 16.826C5.20963 16.4118 4.87384 16.076 4.45963 16.076V17.576ZM2.0387 16.826L2.0387 16.076L2.033 16.076L2.0387 16.826ZM0.974976 15.751L0.224956 15.751L0.224995 15.7564L0.974976 15.751ZM1.72498 13C1.72498 12.5858 1.38919 12.25 0.974976 12.25C0.560762 12.25 0.224976 12.5858 0.224976 13H1.72498ZM10.5468 5C10.5468 4.58579 10.211 4.25 9.79678 4.25C9.38256 4.25 9.04678 4.58579 9.04678 5H10.5468ZM9.04678 10.249C9.04678 10.6632 9.38256 10.999 9.79678 10.999C10.211 10.999 10.5468 10.6632 10.5468 10.249H9.04678ZM0.974976 12.25C0.560762 12.25 0.224976 12.5858 0.224976 13C0.224976 13.4142 0.560762 13.75 0.974976 13.75V12.25ZM2.91815 13.75C3.33236 13.75 3.66815 13.4142 3.66815 13C3.66815 12.5858 3.33236 12.25 2.91815 12.25V13.75ZM22.425 13.75C22.8392 13.75 23.175 13.4142 23.175 13C23.175 12.5858 22.8392 12.25 22.425 12.25V13.75ZM20.3999 12.25C19.9857 12.25 19.6499 12.5858 19.6499 13C19.6499 13.4142 19.9857 13.75 20.3999 13.75V12.25ZM4.01899 10.5076L4.76681 8.47158L3.35879 7.95442L2.61096 9.99042L4.01899 10.5076ZM4.76074 8.48756C5.12559 7.5601 5.49128 6.87863 5.94824 6.42712C6.37329 6.00714 6.91377 5.75 7.74245 5.75V4.25C6.53923 4.25 5.6138 4.64886 4.89396 5.36013C4.20602 6.03987 3.74784 6.9649 3.36486 7.93844L4.76074 8.48756ZM7.74245 5.75H9.79678V4.25H7.74245V5.75ZM3.31498 9.499H2.0387V10.999H3.31498V9.499ZM2.0444 9.49902C1.55922 9.49533 1.09635 9.6897 0.756637 10.033L1.82287 11.0881C1.88214 11.0282 1.95808 10.9984 2.033 10.999L2.0444 9.49902ZM0.756637 10.033C0.41756 10.3757 0.22844 10.8385 0.224995 11.3186L1.72496 11.3294C1.72563 11.235 1.76297 11.1486 1.82287 11.0881L0.756637 10.033ZM0.224976 11.324V13H1.72498V11.324H0.224976ZM3.31498 10.999H9.79678V9.499H3.31498V10.999ZM18.9316 9.99042L18.1838 7.95442L16.7758 8.47158L17.5236 10.5076L18.9316 9.99042ZM18.1777 7.93844C17.7947 6.9649 17.3366 6.03987 16.6486 5.36013C15.9288 4.64886 15.0033 4.25 13.8001 4.25V5.75C14.6288 5.75 15.1693 6.00714 15.5943 6.42712C16.0513 6.87863 16.417 7.5601 16.7818 8.48756L18.1777 7.93844ZM13.8001 4.25H9.79678V5.75H13.8001V4.25ZM18.2276 9.499H9.79678V10.999H18.2276V9.499ZM18.2276 10.999H21.3622V9.499H18.2276V10.999ZM21.3672 10.999C21.5182 10.998 21.6735 11.1277 21.675 11.3294L23.175 11.3186C23.1678 10.3248 22.3719 9.49226 21.3572 9.49902L21.3672 10.999ZM21.675 11.324V13H23.175V11.324H21.675ZM14.9087 16.076H8.71453V17.576H14.9087V16.076ZM19.1636 17.576H21.3613V16.076H19.1636V17.576ZM21.3555 17.576C21.8407 17.5797 22.3036 17.3853 22.6433 17.042L21.5771 15.9869C21.5178 16.0468 21.4419 16.0766 21.367 16.076L21.3555 17.576ZM22.6433 17.042C22.9824 16.6993 23.1715 16.2365 23.175 15.7564L21.675 15.7456C21.6743 15.84 21.637 15.9264 21.5771 15.9869L22.6433 17.042ZM23.175 15.751V13H21.675V15.751H23.175ZM4.45963 16.076H2.0387V17.576H4.45963V16.076ZM2.033 16.076C1.95808 16.0766 1.88214 16.0468 1.82287 15.9869L0.756638 17.042C1.09635 17.3853 1.55922 17.5797 2.0444 17.576L2.033 16.076ZM1.82287 15.9869C1.76297 15.9264 1.72563 15.84 1.72496 15.7456L0.224995 15.7564C0.22844 16.2365 0.41756 16.6993 0.756638 17.042L1.82287 15.9869ZM1.72498 15.751V13H0.224976V15.751H1.72498ZM9.04678 5V10.249H10.5468V5H9.04678ZM0.974976 13.75H2.91815V12.25H0.974976V13.75ZM22.425 12.25H20.3999V13.75H22.425V12.25Z" fill="#000000"></path>
+</svg>
+      
+        Auto
+      </h1>
+<input type="hidden" name="COMPLETE_URL" value="http://paxos.gmbh">
+  
+  <div class="nice-form-group">
+<input type="text" placeholder="Vorname">
+  </div>
+   <div class="nice-form-group">
+<input type="text" placeholder="Nachname">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Straße">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Hausnummer">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Ort">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Postleitzahl">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Telefonnummer">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="E-Mail">
+  </div>
+  </section>
+  <section>
+      <div class="href-target" id="Batt"></div>
+      <h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-battery-charging"><path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19"></path><line x1="23" y1="13" x2="23" y2="11"></line><polyline points="11 6 7 12 13 12 9 18"></polyline></svg>
+      
+        Batteriespeicher
+      </h1>
+<input type="hidden" name="COMPLETE_URL" value="http://paxos.gmbh">
+  
+  <div class="nice-form-group">
+<input type="text" placeholder="Vorname">
+  </div>
+   <div class="nice-form-group">
+<input type="text" placeholder="Nachname">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Straße">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Hausnummer">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Ort">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Postleitzahl">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Telefonnummer">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="E-Mail">
+  </div>
+  </section>
+  <section>
+      <div class="href-target" id="WarWas"></div>
+      <h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-coffee"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+      
+        Warmwasser
+      </h1>
+<input type="hidden" name="COMPLETE_URL" value="http://paxos.gmbh">
+  
+  <div class="nice-form-group">
+<input type="text" placeholder="Vorname">
+  </div>
+   <div class="nice-form-group">
+<input type="text" placeholder="Nachname">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Straße">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Hausnummer">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Ort">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Postleitzahl">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Telefonnummer">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="E-Mail">
+  </div>
+  </section>
+  <section>
+      <div class="href-target" id="Heizu"></div>
+      <h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thermometer"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path></svg>
+      
+        Heizung
+      </h1>
+<input type="hidden" name="COMPLETE_URL" value="http://paxos.gmbh">
+  
+  <div class="nice-form-group">
+<input type="text" placeholder="Vorname">
+  </div>
+   <div class="nice-form-group">
+<input type="text" placeholder="Nachname">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Straße">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Hausnummer">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Ort">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Postleitzahl">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="Telefonnummer">
+  </div>
+    <div class="nice-form-group">
+<input type="text" placeholder="E-Mail">
+  </div>
+  </section>
+  
+Email: <input type="email" name="EMAIL">
+Note: <input type="text" name="NOTE">
+<input type="submit" value="Submit">
+</form>
+
+    <footer>Made with ♥ for pXs</footer>
+  </main>
+</div>
